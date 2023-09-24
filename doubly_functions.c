@@ -55,7 +55,7 @@ stack_t *add_dnodeint(stack_t **head, const int n)
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
-	temp->n = n;	
+	temp->n = n;
 	if (*head == NULL)
 	{
 		temp->next = *head;
