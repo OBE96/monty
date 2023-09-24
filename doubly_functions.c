@@ -14,7 +14,7 @@ stack_t *add_dnodeint_end(stack_t **head, const int n)
 	temp = malloc(sizeof(stack_t));
 	if (!temp)
 	{
-		dprintf(2, "Error: malloc failed\n");
+		vprintf(2, "Error: malloc failed\n");
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
@@ -86,4 +86,3 @@ void free_dlistint(stack_t *head)
 		free(tmp);
 	}
 }
-
